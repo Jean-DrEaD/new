@@ -297,15 +297,15 @@ void setup() {
   ROTATION_DEG = 1080;
   CPR          = 4096;
   configGeneralGain   = 100;
-  configDamperGain    = 80;   // FIX: was 50
-  configFrictionGain  = 80;   // FIX: was 50
+  configDamperGain    = 100;  // increased: kills oscillation at rest (was 80)
+  configFrictionGain  = 80;
   configConstantGain  = 100;
   configPeriodicGain  = 100;
   configSpringGain    = 100;
-  configInertiaGain   = 70;   // FIX: was 50
+  configInertiaGain   = 20;   // reduced: desktop inertia opposes damper → oscillation
   configCenterGain    = 50;   // FIX: 50 satura aos 410°, deixa headroom p/ endstop aos 540°
   configStopGain      = 100;
-  effstate    = 0b00000011;  // FIX: bit0=spring + bit1=damper (damper prevents centering overshoot)
+  effstate    = 0b00001111;  // all desktop effects on (spring+damper+inertia+friction)
   LC_scaling  = 128;
   pwmstate    = 33;
   MM_MIN_MOTOR_TORQUE = 0;

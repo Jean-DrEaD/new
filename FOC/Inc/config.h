@@ -911,9 +911,9 @@
 // Se ainda vibrar/oscilhar com QP=0.8: recuar para 0.6 (entre original e novo).
 // Se motor esquentar demais: reduzir I_MOT_MAX de volta para 15A antes de mexer nos ganhos.
 #define QP                      0.8f
-#define QI                      500.0f
+#define QI                      3600.0f   // was 500 — 3600 = 1200*3 to match xdrive effective gain after formula
 #define DP                      0.7f
-#define DI                      450.0f
+#define DI                      3600.0f   // was 450 — same correction
 #define CFG_CURR_FILT           0.35f
 #define CFG_CF_CURR_FILT        FIXDT_CLAMP_U16(FIXDT_FROM_FLOAT(CFG_CURR_FILT, 16))
 #endif
@@ -956,9 +956,8 @@
 #define PRI_INPUT2              3, -1000, 0, 1000, 0    // TYPE=3(auto-detect), DEADBAND=0
 
 // --- Flash key (único para este variant) ---
-// BUG FIX 2 (prevenção): novo FLASH_WRITE_KEY força STM32 a ignorar calibrações
-// antigas no flash e usar os valores deste config.h. Trocar sempre que mudar params.
-#define FLASH_WRITE_KEY         0x1038    // bumped: DLVPA recovery + pos_offset FOC alignment fix
+//novo FLASH_WRITE_KEY força STM32 a ignorar calibraçõe antigas no flash e usar os valores deste config.h.
+#define FLASH_WRITE_KEY         0x1069    // Valor aleatório, só para diferenciar dos outros variants e forçar a regravação do flash com as novas calibrações.
 
 // BUG FIX 3 (roteamento): TANK_STEERING roteia input2 (speed/torque) diretamente
 // para cmdR sem passar pelo mixerFcn. Com STEER_COEFFICIENT=0 o resultado final

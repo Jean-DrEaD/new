@@ -1,0 +1,106 @@
+PS C:\FFB-Volante\new> python test_hover_serial.py --port COM5
+
+Conectando a COM5 @ 500000 baud...
+
+Conectado. Iniciando teste...
+
+[PING] torque=0 por 5s — aguardando Feedback do STM32...
+
+  TX=246  RX_ok=0  RX_err=0
+
+  ⚠  NENHUM FEEDBACK RECEBIDO. Checklist:
+
+     1. platformio.ini: default_envs = ONE_AXIS_USART_VARIANT
+
+     2. Baud STM32: config.h #define USART3_BAUD 500000
+
+     3. Baud Python: --baud 500000 (padrão)
+
+     4. Wiring: ESP32/Arduino RX → STM32 PB10 (USART3 TX)
+
+                ESP32/Arduino TX → STM32 PB11 (USART3 RX)
+
+     5. GND comum entre ESP32 e placa hoverboard
+
+     6. STM32 ligado (chave power ON)
+
+  Estatísticas finais:   TX=247  RX_ok=0  RX_err=0
+
+PS C:\FFB-Volante\new>
+
+##############################################################################
+
+Arduino IDE:
+
+link=1 pos=43 torq=-11 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=43 torq=-11 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=44 torq=-12 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=193 torq=-53 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=1600 torq=-439 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=2299 torq=-631 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=3080 torq=-845 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=1820 torq=-499 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=-1045 torq=287 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=-1014 torq=278 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=-298 torq=81 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=2306 torq=-633 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=2408 torq=-661 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=2584 torq=-709 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=2246 torq=-616 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=3848 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=5058 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=4503 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=4833 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=6447 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=7832 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=8203 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=4381 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=-3090 torq=848 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=-3659 torq=1000 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=1218 torq=-334 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=2218 torq=-609 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=-319 torq=87 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=-824 torq=226 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=-499 torq=137 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=1635 torq=-449 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=2143 torq=-588 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=3659 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=1974 torq=-542 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=3048 torq=-837 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=4595 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=5450 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=5834 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=6212 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=6128 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=6428 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=6868 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=7547 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=8142 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=9303 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=9827 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=9902 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=10468 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=10866 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=10823 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=11972 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=12288 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=12288 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=12288 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=12288 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=12288 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=12288 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=12288 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=12288 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=6782 torq=-1000 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=-4552 torq=1000 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=-8127 torq=1000 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=-3790 torq=1000 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=3516 torq=-965 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=3375 torq=-926 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=-1507 torq=413 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=-2202 torq=604 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=181 torq=-49 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=952 torq=-261 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=951 torq=-261 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=952 torq=-261 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=952 torq=-261 ac=1 ffb_rx=0 pid=0x16 bat=24.7V

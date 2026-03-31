@@ -1,0 +1,33 @@
+link=1 pos=957 torq=-262 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+[FFB] WARN: report_id=0x00 — Windows not recognizing report IDs! Check HID descriptor.
+link=1 pos=956 torq=-262 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=957 torq=-262 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=956 torq=-262 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=956 torq=-262 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+[FFB] WARN: report_id=0x00 — Windows not recognizing report IDs! Check HID descriptor.
+link=1 pos=957 torq=-262 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=956 torq=-262 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=960 torq=-263 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=1317 torq=-361 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+[FFB] WARN: report_id=0x00 — Windows not recognizing report IDs! Check HID descriptor.
+link=1 pos=1506 torq=-413 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=984 torq=-270 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=657 torq=-180 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=15 torq=0 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+[FFB] WARN: report_id=0x00 — Windows not recognizing report IDs! Check HID descriptor.
+link=1 pos=22 torq=-6 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=35 torq=-9 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=466 torq=-127 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=1291 torq=-354 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+[FFB] WARN: report_id=0x00 — Windows not recognizing report IDs! Check HID descriptor.
+link=1 pos=1368 torq=-375 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=1332 torq=-365 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=432 torq=-118 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+link=1 pos=351 torq=-96 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+[FFB] WARN: report_id=0x00 — Windows not recognizing report IDs! Check HID descriptor.
+link=1 pos=351 torq=-96 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=351 torq=-96 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=351 torq=-96 ac=1 ffb_rx=0 pid=0x16 bat=24.7V
+link=1 pos=351 torq=-96 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
+[FFB] WARN: report_id=0x00 — Windows not recognizing report IDs! Check HID descriptor.
+link=1 pos=351 torq=-96 ac=1 ffb_rx=0 pid=0x16 bat=24.8V
